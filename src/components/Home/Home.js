@@ -19,8 +19,8 @@ export default function Home() {
         <Character {...{ head, body, legs }} />
       </div>
       <div className='select-side'>
-        <Selector {...{ setHead, setBody, setLegs }} />
         <Slogan {...{ slogan, setSlogan }}/>
+        <Selector {...{ setHead, setBody, setLegs }} />
       </div>
     </div>
   );
