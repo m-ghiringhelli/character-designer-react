@@ -7,9 +7,9 @@ import Selector from '../Selector/Selector';
 import Slogan from '../Slogan/Slogan';
 
 export default function Home() {
-  const [head, setHead] = useState();
-  const [body, setBody] = useState();
-  const [legs, setLegs] = useState();
+  const [head, setHead] = useState('question-mark');
+  const [body, setBody] = useState('question-mark');
+  const [legs, setLegs] = useState('question-mark');
   const [slogan, setSlogan] = useState();
   
   return (
