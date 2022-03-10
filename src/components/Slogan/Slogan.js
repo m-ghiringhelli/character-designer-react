@@ -4,6 +4,10 @@ import './Slogan.css';
 
 export default function Slogan() {
   return (
-    <div>Slogan</div>
+    <div className="slogan">
+      <label>what&apos;s your character&apos;s slogan?
+        <input type="text"></input>
+      </label>
+    </div>
   );
 }
