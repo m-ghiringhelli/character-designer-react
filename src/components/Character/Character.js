@@ -1,12 +1,13 @@
 import React from 'react';
+import './Character.css';
 
 export default function Character() {
   return (
     <div className='character'>
       Character
-      <img src="./images/bird-head.jpg" />
-      <img src="./images/jacket-body.jpg" />
-      <img src="./images/shorts-legs.jpg" />
+      <img className='head' src="./images/bird-head.jpg" />
+      <img className='body' src="./images/jacket-body.jpg" />
+      <img className='legs' src="./images/shorts-legs.jpg" />
     </div>
   );
 }

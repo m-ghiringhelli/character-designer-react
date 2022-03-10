@@ -1,0 +1,29 @@
+.character {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.character img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.head {
+    border-radius: 50px 50px 0px 0px;
+    border: 1px solid black;
+    border-bottom: 0;
+}
+
+.body {
+    border: 1px solid black;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.legs {
+    border-radius: 0px 0px 50px 50px;
+    border: 1px solid black;
+    border-top: 0;
+}
