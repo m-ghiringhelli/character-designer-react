@@ -10,6 +10,7 @@ export default function Home() {
   const [head, setHead] = useState();
   const [body, setBody] = useState();
   const [legs, setLegs] = useState();
+  const [slogan, setSlogan] = useState();
   
   return (
     <div className='home'>
@@ -19,7 +20,7 @@ export default function Home() {
       </div>
       <div className='select-side'>
         <Selector {...{ setHead, setBody, setLegs }} />
-        <Slogan />
+        <Slogan {...{ slogan, setSlogan }}/>
       </div>
     </div>
   );
