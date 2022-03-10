@@ -1,7 +1,8 @@
 .character {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    align-items: center;
+    width: 50%;
 }
 
 .character img {
