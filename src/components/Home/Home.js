@@ -13,10 +13,10 @@ export default function Home() {
     <div className='home'>
       Home
       <div className='character-side'>
-        <Character />
+        <Character {...{ head }} />
       </div>
       <div className='select-side'>
-        <Selector setHead={setHead}/>
+        <Selector {...{ setHead }} />
         <Slogan />
       </div>
     </div>
