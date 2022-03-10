@@ -8,15 +8,17 @@ import Slogan from '../Slogan/Slogan';
 
 export default function Home() {
   const [head, setHead] = useState();
+  const [body, setBody] = useState();
+  const [legs, setLegs] = useState();
   
   return (
     <div className='home'>
       Home
       <div className='character-side'>
-        <Character {...{ head }} />
+        <Character {...{ head, body, legs }} />
       </div>
       <div className='select-side'>
-        <Selector {...{ setHead }} />
+        <Selector {...{ setHead, setBody, setLegs }} />
         <Slogan />
       </div>
     </div>

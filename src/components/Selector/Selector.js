@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Selector.css';
 
-export default function Selector({ setHead }) {
+export default function Selector({ setHead, setBody, setLegs }) {
   return (
     <div className='selector'>
       <select name="head"
@@ -16,14 +16,22 @@ export default function Selector({ setHead }) {
         <option value="dog">Dog</option>
         <option value="person">Person</option>
       </select>
-      <select name="body">
+      <select name="body"
+        onChange={(e) => {
+          setBody(e.target.value);
+        }}
+      >
         <option selected disabled>- pick a top -</option>
         <option value="jacket">Jacket</option>
         <option value="suit">Suit</option>
         <option value="shirt">Shirt</option>
         <option value="vest">Vest</option>
       </select>
-      <select name="legs">
+      <select name="legs"
+        onChange={(e) => {
+          setLegs(e.target.value);
+        }}
+      >
         <option selected disabled>- pick some pants -</option>
         <option value="pants">Pants</option>
         <option value="shorts">Shorts</option>
