@@ -2,10 +2,14 @@ import React from 'react';
 
 import './Selector.css';
 
-export default function Selector() {
+export default function Selector({ setHead }) {
   return (
     <div className='selector'>
-      <select name="head">
+      <select name="head"
+        onChange={(e) => {
+          setHead(e.target.value);
+        }}
+      >
         <option selected disabled>- pick a head -</option>
         <option value="bird">Bird</option>
         <option value="cat">Cat</option>

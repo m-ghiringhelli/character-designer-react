@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './Home.css';
 
@@ -7,6 +7,8 @@ import Selector from '../Selector/Selector';
 import Slogan from '../Slogan/Slogan';
 
 export default function Home() {
+  const [head, setHead] = useState();
+  
   return (
     <div className='home'>
       Home
@@ -14,7 +16,7 @@ export default function Home() {
         <Character />
       </div>
       <div className='select-side'>
-        <Selector />
+        <Selector setHead={setHead}/>
         <Slogan />
       </div>
     </div>
