@@ -11,6 +11,7 @@ export default function Home() {
   const [body, setBody] = useState('question-mark');
   const [legs, setLegs] = useState('question-mark');
   const [slogan, setSlogan] = useState();
+  const [slogans, setSlogans] = useState([]);
   
   return (
     <div className='home' style={{
@@ -22,7 +23,7 @@ export default function Home() {
         <Character {...{ head, body, legs }} />
       </div>
       <div className='select-side'>
-        <Slogan {...{ slogan, setSlogan }}/>
+        <Slogan {...{ slogan, slogans, setSlogan, setSlogans }}/>
         <Selector {...{ setHead, setBody, setLegs }} />
       </div>
     </div>
