@@ -14,7 +14,6 @@ export default function Home() {
   
   return (
     <div className='home'>
-      Home
       <div className='character-side'>
         <Character {...{ head, body, legs }} />
       </div>

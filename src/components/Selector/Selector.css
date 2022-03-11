@@ -6,7 +6,19 @@
     align-items: center;
 }
 
+.custom-select {
+    width: 500px;
+    position: relative;
+}
+
 select {
+    appearance: none;
+    outline: none;
     width: 50%;
     margin: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
