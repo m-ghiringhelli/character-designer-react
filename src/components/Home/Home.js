@@ -13,7 +13,11 @@ export default function Home() {
   const [slogan, setSlogan] = useState();
   
   return (
-    <div className='home'>
+    <div className='home' style={{
+      backgroundImage: `url('${process.env.PUBLIC_URL}/images/cyberpunk.png')`,
+      backgroundSize: `cover`,
+      backgroundPosition: `center`
+    }}>
       <div className='character-side'>
         <Character {...{ head, body, legs }} />
       </div>

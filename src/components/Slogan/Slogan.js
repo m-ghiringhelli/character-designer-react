@@ -8,7 +8,10 @@ export default function Slogan({ slogan, setSlogan }) {
       <div className='slogan-display'>
         {slogan}
       </div>
-      <label>what&apos;s your character&apos;s slogan?
+      <label>
+        <span>
+          what&apos;s your character&apos;s slogan?
+        </span>
         <input name="slogan" type="text" 
           onChange={(e) => setSlogan(e.target.value)}>
         </input>
