@@ -15,6 +15,7 @@ export default function Slogan({ slogan, setSlogan }) {
         <input placeholder='slogan' className='input' name="slogan" type="text" 
           onChange={(e) => setSlogan(e.target.value)}>
         </input>
+        <button>save slogan</button>
       </label>
     </div>
   );
