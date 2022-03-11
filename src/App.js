@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 
 import Header from './components/layout/Header/Header';
-import Home from './components/Home/Home';
+import Home from './views/Home/Home';
 import Footer from './components/layout/Footer/Footer';
 
 function App() {

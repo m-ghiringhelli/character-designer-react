@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 
 import './Home.css';
 
-import Character from '../Character/Character';
-import Selector from '../Selector/Selector';
-import Slogan from '../Slogan/Slogan';
+import Character from '../../components/Character/Character';
+import Selector from '../../components/Selector/Selector';
+import Slogan from '../../components/Slogan/Slogan';
 
 export default function Home() {
   const [head, setHead] = useState('question-mark');
