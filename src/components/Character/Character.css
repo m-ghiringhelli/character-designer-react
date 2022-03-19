@@ -1,0 +1,33 @@
+.character {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.character img {
+    width: 400px;
+    object-fit: cover;
+}
+
+#head {
+    border-radius: 50px 50px 0px 0px;
+    border: 3px solid black;
+    border-bottom: 0;
+    height: 250px;
+}
+
+#body {
+    border: 3px solid black;
+    border-top: 0;
+    border-bottom: 0;
+    height: 350px;
+}
+
+#legs {
+    border-radius: 0px 0px 50px 50px;
+    border: 3px solid black;
+    border-top: 0;
+    height: 450px;
+}

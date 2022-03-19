@@ -1,0 +1,28 @@
+.selector {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 0%, 0.2);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.custom-select {
+    width: 500px;
+    position: relative;
+}
+
+select {
+    appearance: none;
+    outline: none;
+    width: 50%;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
